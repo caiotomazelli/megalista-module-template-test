@@ -1,3 +1,7 @@
-from appsflyer.appsflyer_s2s_uploader_async import AppsFlyerS2SUploaderDoFn
+from steps import AppsFlyerEventsStep
+from steps import DestinationType
 
-__all__ = [AppsFlyerS2SUploaderDoFn]
+
+THIRD_PARTY_STEPS = [AppsFlyerEventsStep]
+
+__all__ = [THIRD_PARTY_STEPS, DestinationType]
